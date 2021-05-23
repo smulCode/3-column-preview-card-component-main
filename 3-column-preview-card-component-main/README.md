@@ -34,8 +34,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [live site URL here](https://smulcode.github.io/3-column-preview-card-component-main/)
 
 ## My process
 
@@ -45,6 +44,7 @@ Users should be able to:
 - CSS custom properties
 - CSS Grid
 - Mobile-first workflow
+- SCSS
 
 ### What I learned
 
