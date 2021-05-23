@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+  color: #f2f2f2;
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
+.container-card {
+  margin: 10vw;
+  padding: 10vw;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(240px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  place-content: center;
+}
+
+.card {
+  padding: 2rem;
+  height: 30rem;
+  width: 19rem;
+}
+
+#card-sed {
+  background-color: #e38826;
+  border-radius: 10px 10px 0px 0px;
+}
+
+#card-suv {
+  background-color: #006970;
+}
+
+#card-lux {
+  background-color: #004241;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.icon-sed {
+  margin-top: 1em;
+}
+
+.icon-suv {
+  margin-top: 1em;
+}
+
+.icon-lux {
+  margin-top: 1em;
+}
+
+h1 {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-top: 1em;
+}
+
+p {
+  color: rgba(255, 255, 255, 0.75);
+  margin-top: 2em;
+  line-height: 1.5em;
+  padding-bottom: 3em;
+  width: 15rem;
+}
+
+#btn-sed {
+  color: #e38826;
+}
+
+#btn-suv {
+  color: #006970;
+}
+
+#btn-lux {
+  color: #004241;
+}
+
+#btn-sed:hover {
+  background-color: #e38826;
+  color: #f2f2f2;
+}
+
+#btn-suv:hover {
+  background-color: #006970;
+  color: #f2f2f2;
+}
+
+#btn-lux:hover {
+  background-color: #004241;
+  color: #f2f2f2;
+}
+
+button {
+  color: #f2f2f2;
+  border-radius: 20px;
+  padding: 10px 20px 10px 20px;
+  border: 1px solid #f2f2f2;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 1000px) {
+  .container-card {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    place-content: center;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 6em;
+  }
+  #card-sed {
+    background-color: #e38826;
+    border-radius: 10px 0px 0px 10px;
+  }
+  #card-suv {
+    background-color: #006970;
+  }
+  #card-lux {
+    background-color: #004241;
+    border-radius: 0px 10px 10px 0px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

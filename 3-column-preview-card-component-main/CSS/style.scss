@@ -1,0 +1,154 @@
+// # Front-end Style Guide
+
+// ## Layout
+
+// The designs were created to the following widths:
+
+// - Mobile: 375px
+// - Desktop: 1440px
+
+// ## Colors
+
+// ### Primary
+
+$bright-Orange: hsl(31, 77%, 52%);
+$dark-Cyan: hsl(184, 100%, 22%);
+$veryDarkCyan: hsl(179, 100%, 13%);
+
+// ### Neutral
+
+// paragraphs
+$transparent-White: hsla(0, 0%, 100%, 0.75);
+// background, headings, buttons
+$very-Light-Gray: hsl(0, 0%, 95%);
+
+// ## Typography
+
+// ### Body Copy
+
+$fontSize: 15px;
+
+// ### Font
+
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: $fontSize;
+  font-family: "Lexend Deca", sans-serif;
+  color: $very-Light-Gray;
+}
+
+body {
+  background-color: $very-Light-Gray;
+}
+
+.container-card {
+  margin: 10vw;
+  padding: 10vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  place-content: center;
+}
+
+.card {
+  padding: 2rem;
+  height: 30rem;
+  width: 19rem;
+}
+
+#card-sed {
+  background-color: $bright-Orange;
+  border-radius: 10px 10px 0px 0px;
+}
+#card-suv {
+  background-color: $dark-Cyan;
+}
+#card-lux {
+  background-color: $veryDarkCyan;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.icon-sed {
+  margin-top: 1em;
+}
+.icon-suv {
+  margin-top: 1em;
+}
+
+.icon-lux {
+  margin-top: 1em;
+}
+
+h1 {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-top: 1em;
+}
+
+p {
+  color: $transparent-White;
+  margin-top: 2em;
+  line-height: 1.5em;
+  padding-bottom: 3em;
+  width: 15rem;
+}
+
+#btn-sed {
+  color: $bright-Orange;
+}
+#btn-suv {
+  color: $dark-Cyan;
+}
+#btn-lux {
+  color: $veryDarkCyan;
+}
+
+#btn-sed:hover {
+  background-color: $bright-Orange;
+  color: $very-Light-Gray;
+}
+#btn-suv:hover {
+  background-color: $dark-Cyan;
+  color: $very-Light-Gray;
+}
+#btn-lux:hover{
+  background-color: $veryDarkCyan;
+  color: $very-Light-Gray;
+}
+
+button {
+  color: $very-Light-Gray;
+  border-radius: 20px;
+  padding: 10px 20px 10px 20px;
+  border: 1px solid $very-Light-Gray;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 1000px) {
+  .container-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-content: center;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 6em;
+  }
+
+  #card-sed {
+    background-color: $bright-Orange;
+    border-radius: 10px 0px 0px 10px;
+  }
+  #card-suv {
+    background-color: $dark-Cyan;
+  }
+  #card-lux {
+    background-color: $veryDarkCyan;
+    border-radius: 0px 10px 10px 0px;
+  }
+}
